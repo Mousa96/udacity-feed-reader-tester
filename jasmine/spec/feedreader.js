@@ -117,18 +117,23 @@ $(function() {
          beforeEach(function(done) {
             loadFeed(0, function() { // load once & get initial feed
                 initialFeed = $('.feed').html();
-                done();
+
+
+                loadFeed(1, function() {
+
+                    done();
+
+                });
+
 
             });
+
+
           });
 
-         beforeEach(function(done) {
-            loadFeed(1,done); 
-
-              });
-
-              it('is different from previous entry', function() {
+          it('is different from previous entry', function() {
             expect($('.feed').html()).not.toEqual(initialFeed); //comparing the new feed with the previous one.
+
         });
     });
 }());
