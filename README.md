@@ -6,6 +6,6 @@ We are given a web-based application that reads RSS feeds. The original develope
 
 #### How To Run
 I would include a live version but for some reason it behaves differently from the local version and the specs aren't showing, so for now you can:
-1 clone the repo 
-2 open the zipped folder 
-3 open index.html in your favorite web browser
+1. clone the repo 
+2. open the zipped folder 
+3. open index.html in your favorite web browser
